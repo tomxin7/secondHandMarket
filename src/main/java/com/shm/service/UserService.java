@@ -9,6 +9,8 @@ public interface UserService {
 
 	public User getUserByPhone(String phone);
 
+	public User getUserByPhoneAndPass(String phone,String password);
+
 	public void updateUserName(User user);
 
 	int updateGoodsNum(Integer id, Integer goodsNum);

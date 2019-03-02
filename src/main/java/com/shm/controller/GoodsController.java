@@ -395,7 +395,7 @@ public class GoodsController {
      */
     @ResponseBody
     @RequestMapping(value = "/uploadFile")
-    public Map<String, Object> uploadFile(HttpServletRequest request, HttpSession session, MultipartFile myfile)
+    private Map<String, Object> uploadFile(HttpServletRequest request, HttpSession session, MultipartFile myfile)
             throws IllegalStateException, IOException {
         // 原始名称
         String oldFileName = myfile.getOriginalFilename(); // 获取上传文件的原名

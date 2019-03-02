@@ -35,6 +35,14 @@
         where phone = #{phone,jdbcType=CHAR}
     </select>
 
+    <!--根据手机号和密码查询用户-->
+    <select id="getUserByPhoneAndPass" resultMap="BaseResultMap" parameterType="String">
+        select
+        <include refid="Base_Column_List"/>
+        from user
+        where phone = #{phone,jdbcType=CHAR} and password = #{password,jdbcType=CHAR}
+    </select>
+
     <select id="getUserById" resultMap="BaseResultMap" parameterType="Integer">
         select
         <include refid="Base_Column_List"/>

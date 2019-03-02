@@ -273,7 +273,7 @@
             <p class="bargain">可讲价</p>
             <p>
                 <i class="iconfont"></i>
-                <em class="item-location">闽工院</em>
+                <em class="item-location">赣师</em>
             </p>
         </div>
         <div class="publisher-info-title">

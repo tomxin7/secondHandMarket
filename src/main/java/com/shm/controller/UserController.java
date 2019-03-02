@@ -132,22 +132,23 @@ public class UserController {
 	@RequestMapping(value = "/login")
 	public ModelAndView loginValidate(HttpServletRequest request, HttpServletResponse response, User user,
 			ModelMap modelMap) throws IOException {
-		User cur_user = userService.getUserByPhone(user.getPhone());
+		String str = MD5.md5(user.getPassword());
+		user.setPassword(str);
+		User cur_user = userService.getUserByPhoneAndPass(user.getPhone(),user.getPassword());
 		String url = request.getHeader("Referer");
 		if (cur_user != null) {
-			String pwd = MD5.md5(user.getPassword());
-			if (pwd.equals(cur_user.getPassword())) {
 				if (cur_user.getStatus() == 1) {
 					request.getSession().setAttribute("cur_user", cur_user);
 					return new ModelAndView("redirect:" + url);
 				}
-			}
 		}else{
 			response.setContentType("text/html;charset=utf-8");
 			PrintWriter out= response.getWriter();
-			out.print("<script language='javascript'>alert('账号密码错误')</script>");
+			String js = "<script language='javascript'>alert('账号密码错误');window.location.href=\"{url}\"; </script>";
+			js = js.replace("{url}",url);
+			out.print(js);
 		}
-		return new ModelAndView("redirect:" + url);
+		return null;
 	}
 
 	/**

@@ -118,9 +118,9 @@
     <nav class="white nav1">
         <div class="nav-wrapper">
             <a href="<%=basePath%>goods/homeGoods" class="logo">
-                <em class="em1">校园</em>
+                <em class="em1">赣南师范大学</em>
                 <em class="em2">二手工坊</em>
-                <em class="em3">SH.market</em>
+                <em class="em3">market</em>
             </a>
             <div class="nav-wrapper search-bar">
                 <form class="ng-pristine ng-invalid ng-invalid-required" action="<%=basePath%>goods/search">
@@ -375,7 +375,7 @@
                         <div class="bannerimg">
                             <ul class="bannerul">
                                 <p class="text1">Hello：</p>
-                                <p class="text2">欢迎来到secondHandMarket校园二手工坊。临近毕业</p>
+                                <p class="text2">欢迎来到赣南师范大学校园二手工坊。临近毕业</p>
                                 <p class="text3">季的你，是否有太多的闲置与校友分享，为了追求更好的校</p>
                                 <p class="text4">园服务，我们打造了一个全新的校园平台——<span>校园二手工坊</span></p>
                                 <p class="text5">这里有更多的闲置分享，更自由的校园话题讨论，你想要的，都在这里。</p>
@@ -411,7 +411,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>闽工院</p>
+                            <p>赣师</p>
                             <p><c:out value="${item.goods.startTime}"></c:out></p>
                         </div>
                     </a>
@@ -440,7 +440,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>闽工院</p>
+                            <p>赣师</p>
                             <p><c:out value="${item.goods.startTime}"></c:out></p>
                         </div>
                     </a>
@@ -469,7 +469,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>闽工院</p>
+                            <p>赣师</p>
                             <p><c:out value="${item.goods.startTime}"></c:out></p>
                         </div>
                     </a>
@@ -495,7 +495,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>闽工院</p>
+                            <p>赣师</p>
                             <p><c:out value="${item.goods.startTime}"></c:out></p>
                         </div>
                     </a>
@@ -521,7 +521,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>闽工院</p>
+                            <p>赣师</p>
                             <p><c:out value="${item.goods.startTime}"></c:out></p>
                         </div>
                     </a>
@@ -547,7 +547,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>闽工院</p>
+                            <p>赣师</p>
                             <p><c:out value="${item.goods.startTime}"></c:out></p>
                         </div>
                     </a>
@@ -573,7 +573,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>闽工院</p>
+                            <p>赣师</p>
                             <p><c:out value="${item.goods.startTime}"></c:out></p>
                         </div>
                     </a>
@@ -599,7 +599,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>闽工院</p>
+                            <p>赣师</p>
                             <p><c:out value="${item.goods.startTime}"></c:out></p>
                         </div>
                     </a>

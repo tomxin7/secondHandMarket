@@ -32,4 +32,6 @@ public interface UserMapper{
 	List<User> getUserListByUser(@Param("phone") String phone,@Param("username") String username,@Param("qq") String qq);
 
 	List<User> getUserListOrderByCreateAt();
+
+    User getUserByPhoneAndPass(@Param("phone") String phone,@Param("password") String password);
 }
